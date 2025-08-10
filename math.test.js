@@ -11,7 +11,7 @@ describe('Pruebas para factorial', () => {
 });
 
 describe('Pruebas para fibonacci', () => {
-    test('Fibonacci de 0 debe ser 0', () => {
+    test('Fibonacci de 0 debe ser 1', () => {
         expect(fibonacci(0)).toBe(0);
     });
 
