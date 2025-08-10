@@ -18,6 +18,9 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Instalar Dependencias
+        run: npm install
+    
        # --- Paso de diagnóstico ---
       - name: Verificar si eslint se instaló correctamente en la ruta
         run: ls -la ./node_modules/.bin/eslint
@@ -26,9 +29,7 @@ jobs:
       - name: Lint del Código
         run: npm exec eslint .
 
-      - name: Instalar Dependencias
-        run: npm install
-    
+
       - name: Ejecutar Pruebas
         run: npm test
 
